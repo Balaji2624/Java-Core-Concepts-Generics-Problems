@@ -1,30 +1,33 @@
 package com.bridgelabz.genericsproblems;
 
 class MaxInteger<T extends Comparable<T>> {
-    private T a, b, c;
+    private T[] elements;
 
-    // Parameterized constructor to initialize the variables
-    public MaxInteger(T a, T b, T c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    // Parameterized constructor to initialize the generic array
+    @SafeVarargs
+    public MaxInteger(T... elements) {
+        this.elements = elements;
     }
 
     // Instance method to call the static testMaximum method
     public T testMaximum() {
-        return MaxInteger.testMaximum(this.a, this.b, this.c);
+        return MaxInteger.testMaximum(elements);
     }
 
-    // Static generic method to find the maximum of three Comparable objects
-    public static <T extends Comparable<T>> T testMaximum(T a, T b, T c) {
-        T max = a;
-
-        if (b.compareTo(max) > 0) {
-            max = b;
+    // Static generic method to find the maximum of any number of Comparable objects
+    @SafeVarargs
+    public static <T extends Comparable<T>> T testMaximum(T... elements) {
+        if (elements.length == 0) {
+            throw new IllegalArgumentException("No elements provided");
         }
 
-        if (c.compareTo(max) > 0) {
-            max = c;
+        T max = elements[0]; // Initialize max with the first element
+
+        // Loop through all elements to find the maximum
+        for (T element : elements) {
+            if (element.compareTo(max) > 0) {
+                max = element;
+            }
         }
 
         return max;
