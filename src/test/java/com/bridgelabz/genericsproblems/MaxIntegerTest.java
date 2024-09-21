@@ -28,42 +28,42 @@ public class MaxIntegerTest {
 
     // TC 2.1 :
     @Test
-    public void findMax_whenMaxIsAtFirstPosition_shouldReturnFirstValue() {
+    public void findMaxFloat_whenMaxIsAtFirstPosition_shouldReturnFirstValue() {
         Float a = 9.5f, b = 3.2f, c = 5.7f;
         assertEquals(a, MaxInteger.findMax(a, b, c), "Max should be at the first position");
     }
 
     // TC 2.2 :
     @Test
-    public void findMax_whenMaxIsAtSecondPosition_shouldReturnSecondValue() {
+    public void findMaxFloat_whenMaxIsAtSecondPosition_shouldReturnSecondValue() {
         Float a = 3.5f, b = 12.6f, c = 7.4f;
         assertEquals(b, MaxInteger.findMax(a, b, c), "Max should be at the second position");
     }
 
     // TC 2.3 :
     @Test
-    public void findMax_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
+    public void findMaxFloat_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
         Float a = 2.9f, b = 4.8f, c = 10.2f;
         assertEquals(c, MaxInteger.findMax(a, b, c), "Max should be at the third position");
     }
 
     // TC 3.1 :
     @Test
-    public void findMax_whenMaxIsAtFirstPosition_shouldReturnFirstValue() {
+    public void findMaxStr_whenMaxIsAtFirstPosition_shouldReturnFirstValue() {
         String a = "Peach", b = "Apple", c = "Banana";
         assertEquals(a, MaxInteger.findMax(a, b, c), "Max should be at the first position");
     }
 
     // TC 3.2 :
     @Test
-    public void findMax_whenMaxIsAtSecondPosition_shouldReturnSecondValue() {
+    public void findMaxStr_whenMaxIsAtSecondPosition_shouldReturnSecondValue() {
         String a = "Apple", b = "Peach", c = "Banana";
         assertEquals(b, MaxInteger.findMax(a, b, c), "Max should be at the second position");
     }
 
     // TC 3.3 :
     @Test
-    public void findMax_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
+    public void findMaxStr_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
         String a = "Apple", b = "Banana", c = "Peach";
         assertEquals(c, MaxInteger.findMax(a, b, c), "Max should be at the third position");
     }
