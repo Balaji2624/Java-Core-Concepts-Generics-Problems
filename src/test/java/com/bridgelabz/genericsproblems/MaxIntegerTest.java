@@ -1,4 +1,4 @@
 package com.bridgelabz.genericsproblems;
 
-public class PrintArrayTest {
+public class MaxIntegerTest {
 }
