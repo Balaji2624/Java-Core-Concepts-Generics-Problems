@@ -39,4 +39,11 @@ public class MaxIntegerTest {
         Float a = 3.5f, b = 12.6f, c = 7.4f;
         assertEquals(b, MaxInteger.findMax(a, b, c), "Max should be at the second position");
     }
+
+    // TC 2.3 :
+    @Test
+    public void findMax_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
+        Float a = 2.9f, b = 4.8f, c = 10.2f;
+        assertEquals(c, MaxInteger.findMax(a, b, c), "Max should be at the third position");
+    }
 }
