@@ -2,32 +2,24 @@ package com.bridgelabz.genericsproblems;
 
 class MaxInteger {
 
-    public static Integer findMax(Integer a, Integer b, Integer c) {
-        Integer max = a; 
+        public static Float findMax(Float a, Float b, Float c) {
+            Float max = a;
 
+            if (b.compareTo(max) > 0) {
+                max = b;
+            }
 
-        if (b.compareTo(max) > 0) {
-            max = b;
+            if (c.compareTo(max) > 0) {
+                max = c;
+            }
+
+            return max;
         }
-
-        if (c.compareTo(max) > 0) {
-            max = c;
-        }
-
-        return max;
-    }
-
 
     public static void main(String[] args) {
 
-        Integer a1 = 9, b1 = 3, c1 = 5;
-        System.out.println("Max of (9, 3, 5) is: " + findMax(a1, b1, c1));
-
-        Integer a2 = 3, b2 = 12, c2 = 7;
-        System.out.println("Max of (3, 12, 7) is: " + findMax(a2, b2, c2));
-
-        Integer a3 = 2, b3 = 4, c3 = 10;
-        System.out.println("Max of (2, 4, 10) is: " + findMax(a3, b3, c3));
+        float a1 = 9.1f, b1 = 3.2f, c1 = 5.2f;
+        System.out.println("Max of (9.1, 3.2, 5.2) is: " + findMax(a1, b1, c1));
 
     }
 }
