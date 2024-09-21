@@ -26,6 +26,9 @@ class MaxInteger {
         Integer a2 = 3, b2 = 12, c2 = 7;
         System.out.println("Max of (3, 12, 7) is: " + findMax(a2, b2, c2));
 
+        Integer a3 = 2, b3 = 4, c3 = 10;
+        System.out.println("Max of (2, 4, 10) is: " + findMax(a3, b3, c3));
+
     }
 }
 
