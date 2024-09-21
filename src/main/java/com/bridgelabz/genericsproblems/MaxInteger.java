@@ -46,6 +46,12 @@ class MaxInteger {
         String a4 = "Apple", b4 = "Peach", c4 = "Banana";
         System.out.println("Max of (Apple, Peach, Banana) is: " + findMax(a4, b4, c4));
 
+        String a5 = "Zebra", b5 = "Elephant", c5 = "Lion";
+        System.out.println("Max of (Zebra, Elephant, Lion) is: " + findMax(a5, b5, c5));
+
+        String a6 = "Cherry", b6 = "Apricot", c6 = "Mango";
+        System.out.println("Max of (Cherry, Apricot, Mango) is: " + findMax(a6,b6,c6));
+
     }
 }
 

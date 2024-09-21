@@ -46,4 +46,25 @@ public class MaxIntegerTest {
         Float a = 2.9f, b = 4.8f, c = 10.2f;
         assertEquals(c, MaxInteger.findMax(a, b, c), "Max should be at the third position");
     }
+
+    // TC 3.1 :
+    @Test
+    public void findMax_whenMaxIsAtFirstPosition_shouldReturnFirstValue() {
+        String a = "Peach", b = "Apple", c = "Banana";
+        assertEquals(a, MaxInteger.findMax(a, b, c), "Max should be at the first position");
+    }
+
+    // TC 3.2 :
+    @Test
+    public void findMax_whenMaxIsAtSecondPosition_shouldReturnSecondValue() {
+        String a = "Apple", b = "Peach", c = "Banana";
+        assertEquals(b, MaxInteger.findMax(a, b, c), "Max should be at the second position");
+    }
+
+    // TC 3.3 :
+    @Test
+    public void findMax_whenMaxIsAtThirdPosition_shouldReturnThirdValue() {
+        String a = "Apple", b = "Banana", c = "Peach";
+        assertEquals(c, MaxInteger.findMax(a, b, c), "Max should be at the third position");
+    }
 }
